@@ -20,22 +20,22 @@ closeButtonsArray.forEach(function(closeButton, i) {
 
 
 
-// var addItemButton = document.getElementById("add-item");
-// // console.log(addlistButton);
+var addItemButton = document.getElementById("add-item");
+// console.log(addlistButton);
 
-// addItemButton.addEventListener("click", function() {
-// 	console.log("button clicked");
+addItemButton.addEventListener("click", function() {
+	console.log("button clicked");
 
-// 	var addItemPopup = document.getElementById("add-item-popup");
-// 	addItemPopup.style.display = "flex";
-// });
+	var addItemPopup = document.getElementById("add-item-popup");
+	addItemPopup.style.display = "flex";
+});
 
-// var closeButtonsArray = document.querySelectorAll(".close");
-// closeButtonsArray = Array.from(closeButtonsArray);
+var closeButtonsArray = document.querySelectorAll(".close");
+closeButtonsArray = Array.from(closeButtonsArray);
 
-// closeButtonsArray.forEach(function(closeButton, i) {
-// 	closeButton.addEventListener("click", function() {
-// 		var addItemPopup = document.getElementById("add-item-popup");
-// 		addItemPopup.style.display = "none";
-// 	});
-// });
+closeButtonsArray.forEach(function(closeButton, i) {
+	closeButton.addEventListener("click", function() {
+		var addItemPopup = document.getElementById("add-item-popup");
+		addItemPopup.style.display = "none";
+	});
+});
